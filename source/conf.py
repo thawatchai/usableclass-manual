@@ -179,8 +179,8 @@ latex_font_size = '12pt'
 # Grouping the document tree into LaTeX files. List of tuples
 # (source start file, target name, title, author, documentclass [howto/manual]).
 latex_documents = [
-  ('index', 'HelpClassinth.tex', u'Help.Class.in.th Documentation',
-   u'Thawatchai Piyawat, Jantwan Piyawat, Nantita Noiwan', 'manual'),
+  ('index', 'manual.tex', u'คู่มือการใช้งาน Class.in.th',
+   u'UsableLabs', 'manual'),
 ]
 
 # The name of an image file (relative to this directory) to place at the top of
@@ -203,7 +203,8 @@ latex_preamble = '''
 \XeTeXlinebreaklocale "th_TH"
 \sloppy
 \defaultfontfeatures{Mapping=tex-text,Scale=1.4}
-\setromanfont[Mapping=tex-text]{TH Niramit AS}
+%\setromanfont[Mapping=tex-text]{TH Niramit AS}
+\setromanfont[Mapping=tex-text]{KaniGa}
 '''
 
 # Documents to append as an appendix to all manuals.
@@ -213,7 +214,9 @@ latex_preamble = '''
 #latex_domain_indices = True
 
 latex_elements = {
+'babel': '',
 'fontpkg': '',
+'fncychap': '',
 }
 
 # -- Options for manual page output --------------------------------------------

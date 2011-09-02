@@ -6,10 +6,8 @@
 คู่มือการใช้งาน Class.in.th
 =========================
 
-Contents:
-
 .. toctree::
-   :maxdepth: 3
+   :maxdepth: 5
    
    home
    users

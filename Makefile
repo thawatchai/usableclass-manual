@@ -96,6 +96,14 @@ latex:
 	@echo "Build finished; the LaTeX files are in $(BUILDDIR)/latex."
 	@echo "Run \`make' in that directory to run these through (pdf)latex" \
 	      "(use \`make latexpdf' here to do that automatically)."
+  # hack
+	@echo "%!TEX TS-program = xelatex" > $(BUILDDIR)/latex/main.tex
+	@echo "%!TEX encoding = UTF-8 Unicode" >> $(BUILDDIR)/latex/main.tex
+	cat $(BUILDDIR)/latex/manual.tex >> $(BUILDDIR)/latex/main.tex
+	@echo "\\\renewcommand{\py@HeaderFamily}{}" >> $(BUILDDIR)/latex/sphinx.sty
+	@echo "\\\renewcommand{\\\contentsname}{สารบัญ}" >> $(BUILDDIR)/latex/sphinx.sty
+	@echo "\\\renewcommand{\\\chaptername}{บทที่}" >> $(BUILDDIR)/latex/sphinx.sty
+	# mv $(BUILDDIR)/latex/main.tex $(BUILDDIR)/latex/manual.tex
 
 latexpdf:
 	$(SPHINXBUILD) -b latex $(ALLSPHINXOPTS) $(BUILDDIR)/latex
