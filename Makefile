@@ -90,20 +90,41 @@ epub:
 	@echo
 	@echo "Build finished. The epub file is in $(BUILDDIR)/epub."
 
-latex:
+old_latex:
 	$(SPHINXBUILD) -b latex $(ALLSPHINXOPTS) $(BUILDDIR)/latex
-	@echo
-	@echo "Build finished; the LaTeX files are in $(BUILDDIR)/latex."
-	@echo "Run \`make' in that directory to run these through (pdf)latex" \
-	      "(use \`make latexpdf' here to do that automatically)."
+	# @echo
+	# @echo "Build finished; the LaTeX files are in $(BUILDDIR)/latex."
+	# @echo "Run \`make' in that directory to run these through (pdf)latex" \
+	#       "(use \`make latexpdf' here to do that automatically)."
   # hack
 	@echo "%!TEX TS-program = xelatex" > $(BUILDDIR)/latex/main.tex
 	@echo "%!TEX encoding = UTF-8 Unicode" >> $(BUILDDIR)/latex/main.tex
 	cat $(BUILDDIR)/latex/manual.tex >> $(BUILDDIR)/latex/main.tex
+
 	@echo "\\\renewcommand{\py@HeaderFamily}{}" >> $(BUILDDIR)/latex/sphinx.sty
 	@echo "\\\renewcommand{\\\contentsname}{สารบัญ}" >> $(BUILDDIR)/latex/sphinx.sty
 	@echo "\\\renewcommand{\\\chaptername}{บทที่}" >> $(BUILDDIR)/latex/sphinx.sty
+
+	# $(shell cd $(BUILDDIR)/latex; xelatex main.tex; xelatex main.tex)
+
 	# mv $(BUILDDIR)/latex/main.tex $(BUILDDIR)/latex/manual.tex
+
+latex:
+	$(SPHINXBUILD) -b latex $(ALLSPHINXOPTS) $(BUILDDIR)/latex
+
+	@echo "%!TEX TS-program = xelatex" > $(BUILDDIR)/latex/main.tex
+	@echo "%!TEX encoding = UTF-8 Unicode" >> $(BUILDDIR)/latex/main.tex
+	cat $(BUILDDIR)/latex/manual.tex >> $(BUILDDIR)/latex/main.tex
+
+	@echo "\\\renewcommand{\py@HeaderFamily}{}" >> $(BUILDDIR)/latex/sphinx.sty
+	@echo "\\\renewcommand{\\\contentsname}{สารบัญ}" >> $(BUILDDIR)/latex/sphinx.sty
+	@echo "\\\renewcommand{\\\chaptername}{บทที่}" >> $(BUILDDIR)/latex/sphinx.sty
+
+	sed "s/\[t\]{c}/\[t\]{r}/" $(BUILDDIR)/latex/sphinxmanual.cls > $(BUILDDIR)/latex/sphinxmanual.cls.new
+	mv $(BUILDDIR)/latex/sphinxmanual.cls.new $(BUILDDIR)/latex/sphinxmanual.cls
+
+pdf:
+	$(shell cd $(BUILDDIR)/latex; xelatex main.tex)
 
 latexpdf:
 	$(SPHINXBUILD) -b latex $(ALLSPHINXOPTS) $(BUILDDIR)/latex

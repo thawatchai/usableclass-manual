@@ -180,7 +180,7 @@ latex_font_size = '12pt'
 # (source start file, target name, title, author, documentclass [howto/manual]).
 latex_documents = [
   ('index', 'manual.tex', u'คู่มือการใช้งาน Class.in.th',
-   u'UsableLabs', 'manual'),
+   u'ผศ.ดร.ธวัชชัย ปิยะวัฒน์\\\\ดร.จันทวรรณ ปิยะวัฒน์\\\\นันทิตา น้อยวัน', 'manual'),
 ]
 
 # The name of an image file (relative to this directory) to place at the top of
