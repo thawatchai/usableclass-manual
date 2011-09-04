@@ -205,6 +205,7 @@ latex_preamble = '''
 \defaultfontfeatures{Mapping=tex-text,Scale=1.4}
 %\setromanfont[Mapping=tex-text]{TH Niramit AS}
 \setromanfont[Mapping=tex-text]{KaniGa}
+\setcounter{tocdepth}{3}
 '''
 
 # Documents to append as an appendix to all manuals.
