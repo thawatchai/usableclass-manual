@@ -119,6 +119,7 @@ latex:
 	@echo "\\\renewcommand{\py@HeaderFamily}{}" >> $(BUILDDIR)/latex/sphinx.sty
 	@echo "\\\renewcommand{\\\contentsname}{สารบัญ}" >> $(BUILDDIR)/latex/sphinx.sty
 	@echo "\\\renewcommand{\\\chaptername}{บทที่}" >> $(BUILDDIR)/latex/sphinx.sty
+	@echo "\\\def\\\figurename{ภาพที่}" >> $(BUILDDIR)/latex/sphinx.sty
 
 	sed "s/\[t\]{c}/\[t\]{r}/" $(BUILDDIR)/latex/sphinxmanual.cls > $(BUILDDIR)/latex/sphinxmanual.cls.new
 	mv $(BUILDDIR)/latex/sphinxmanual.cls.new $(BUILDDIR)/latex/sphinxmanual.cls
