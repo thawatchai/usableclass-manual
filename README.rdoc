@@ -1,1 +1,0 @@
-This repository contains the source for help.class.in.th.
