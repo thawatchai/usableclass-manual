@@ -205,6 +205,8 @@ latex_preamble = '''
 \defaultfontfeatures{Mapping=tex-text,Scale=1.4}
 %\setromanfont[Mapping=tex-text]{TH Niramit AS}
 \setromanfont[Mapping=tex-text]{KaniGa}
+%\setmonofont[Mapping=tex-text]{TH Chakra Petch}
+\setmonofont[Mapping=tex-text]{TH Mali Grade 6}
 \setcounter{tocdepth}{3}
 '''
 
