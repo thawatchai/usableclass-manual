@@ -17,11 +17,18 @@ You must have these tools installed in your mac:
 * Thai TEPC Fonts
 * Kod
 
+Add this line to your .bashrc
+
+::
+
+  PATH=$PATH:~/bin:/usr/texbin
+
 Run these commands to install Python 2.7
 
 ::
 
   sudo port -uv install python27
+  sudo port -uv install python_select
   sudo port select --set python python27
 
 Run these commands to install Sphinx
