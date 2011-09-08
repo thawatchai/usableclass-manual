@@ -44,3 +44,9 @@ Run these commands to build the targets
 
   make html
   make latex; make pdf
+
+License
+--------
+
+Copyright © 2011 Thawatchai Piyawat, Jantawan Piyawat, Nantita Noiwan
+CC-BY-NC
