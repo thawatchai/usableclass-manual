@@ -17,13 +17,13 @@ You must have these tools installed in your mac:
 * Thai TEPC Fonts
 * Kod
 
-Add this line to your .bashrc
+Add this line to your .bashrc.
 
 ::
 
   PATH=$PATH:~/bin:/usr/texbin
 
-Run these commands to install Python 2.7
+Run these commands to install Python 2.7.
 
 ::
 
@@ -31,14 +31,14 @@ Run these commands to install Python 2.7
   sudo port -uv install python_select
   sudo port select --set python python27
 
-Run these commands to install Sphinx
+Run these commands to install Sphinx.
 
 ::
 
   sudo port -uv install py27-sphinx
   sudo ln -s /opt/local/bin/sphinx-build-2.7 /opt/local/bin/sphinx-build
   
-Run these commands to clone this repo
+Run these commands to clone this repository.
 
 ::
 
@@ -47,7 +47,7 @@ Run these commands to clone this repo
   cd usableclass-manual
   sh setup.sh
   
-Run these commands to edit and build the targets
+Run these commands to edit and build the targets.
 
 ::
 
