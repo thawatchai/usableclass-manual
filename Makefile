@@ -112,15 +112,21 @@ old_latex:
 latex:
 	$(SPHINXBUILD) -b latex $(ALLSPHINXOPTS) $(BUILDDIR)/latex
 
+	# manual.tex to main.tex
 	@echo "%!TEX TS-program = xelatex" > $(BUILDDIR)/latex/main.tex
 	@echo "%!TEX encoding = UTF-8 Unicode" >> $(BUILDDIR)/latex/main.tex
 	cat $(BUILDDIR)/latex/manual.tex >> $(BUILDDIR)/latex/main.tex
 
+	sed "s/tableofcontents/tableofcontents\\\renewcommand*\\\listfigurename{รายการภาพประกอบ}\\\listoffigures/" $(BUILDDIR)/latex/main.tex > $(BUILDDIR)/latex/main.tex.new
+	mv $(BUILDDIR)/latex/main.tex.new $(BUILDDIR)/latex/main.tex
+
+	# patch sphinx.sty
 	@echo "\\\renewcommand{\py@HeaderFamily}{}" >> $(BUILDDIR)/latex/sphinx.sty
 	@echo "\\\renewcommand{\\\contentsname}{สารบัญ}" >> $(BUILDDIR)/latex/sphinx.sty
 	@echo "\\\renewcommand{\\\chaptername}{บทที่}" >> $(BUILDDIR)/latex/sphinx.sty
 	@echo "\\\def\\\figurename{ภาพที่}" >> $(BUILDDIR)/latex/sphinx.sty
 
+	# patch sphinxmanual.cls
 	sed "s/\[t\]{c}/\[t\]{r}/" $(BUILDDIR)/latex/sphinxmanual.cls > $(BUILDDIR)/latex/sphinxmanual.cls.new
 	mv $(BUILDDIR)/latex/sphinxmanual.cls.new $(BUILDDIR)/latex/sphinxmanual.cls
 
