@@ -81,7 +81,7 @@
 
 .. _commit-answer-form:
 
-.. figure:: _static/commit_ans_form.png
+.. figure:: _static/commit_answer_form.png
   :align: center
   :scale: 60
   
