@@ -149,7 +149,7 @@
 
 .. _create-class-discussion-form:
 
-.. figure:: _static/mockup.png
+.. figure:: _static/create_class_discussion_form.png
   :align: center
   :scale: 60
   
@@ -210,7 +210,7 @@
 
 .. _create-group-class-form:
 
-.. figure:: _static/mockup.png
+.. figure:: _static/create_group_class_form.png
   :align: center
   :scale: 60
   
@@ -261,7 +261,7 @@
 
 .. _create-class-assignment-form:
 
-.. figure:: _static/mockup.png
+.. figure:: _static/create_class_assignment.png
   :align: center
   :scale: 60
   
