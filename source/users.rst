@@ -134,7 +134,7 @@ Facebook Username
 
 .. _learning-journal-form:
 
-.. figure:: _static/learning_journal_form.png
+.. figure:: _static/users/learning_journal_form.png
   :align: center
   :scale: 60
   

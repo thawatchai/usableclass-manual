@@ -11,7 +11,7 @@
 
 .. _join-class-form:
 
-.. figure:: _static/mockup.png
+.. figure:: _static/students/join_class_form.png
   :align: center
   :scale: 60
   
@@ -81,7 +81,7 @@
 
 .. _commit-answer-form:
 
-.. figure:: _static/commit_answer_form.png
+.. figure:: _static/students/commit_answer_form.png
   :align: center
   :scale: 60
   
