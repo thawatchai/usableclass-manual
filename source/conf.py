@@ -208,6 +208,10 @@ latex_preamble = '''
 %\setmonofont[Mapping=tex-text]{TH Chakra Petch}
 \setmonofont[Mapping=tex-text]{TH Mali Grade 6}
 \setcounter{tocdepth}{3}
+\setlength{\parindent}{0.25in} 
+\\renewcommand{\labelitemii}{$\\circ$}
+\\renewcommand{\labelitemiii}{$\\star$}
+\usepackage{indentfirst}
 '''
 
 # Documents to append as an appendix to all manuals.
