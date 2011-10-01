@@ -44,7 +44,7 @@
 
 กำลังจัดทำ
 
-:ref: `discussion-section`_
+:ref:`discussion-section`_
 
 เพิ่มไฟล์แนบในหัวข้อสนทนา*
 --------------------------
@@ -64,7 +64,7 @@
 เพิ่มความเห็น*
 -------------
 
-:ref: `opinion-section`_
+:ref:`opinion-section`_
 
 กำลังจัดทำ
 
