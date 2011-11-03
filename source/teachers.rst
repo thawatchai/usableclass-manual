@@ -92,7 +92,7 @@
     คำอธิบายชั้นเรียน
       รายละเอียดรายวิชาที่เปิดสอน
   
-    ตัวเลือกสำหรับผู้สอน 
+    ตัวเลือกสำหรับผู้สอน  :ref:`class-teachers-choice`
       แก้ไขรายละเอียดของชั้นเรียน
   
     ผู้ขอเข้าร่วมชั้นเรียน 
@@ -101,6 +101,9 @@
     ข่าวประกาศ 
       รายการข่าวประกาศต่างๆ ของชั้นเรียนนั้น เพื่อแจ้งให้ผู้เรียนในชั้นเรียนทราบ
   
+    Grade Criteria
+      รายละเอียดเกรด
+
     เอกสารการสอน 
       รายการเอกสารการสอนต่างๆ ทั้งแบบไฟล์แนบเพื่อประกอบการสอน วีดิโอคลิบ เอกสารออนไลน์ พร้อมอ้างถึงที่มาขอไฟล์อย่างชัดเจน
   
@@ -116,12 +119,20 @@
 
 .. _view-class-detail-form:
 
-.. figure:: _static/teachers/view_class_detail.png
+.. figure:: _static/teachers/class_detail.png
   :align: center
   :scale: 80
   
   แบบฟอร์มแสดงรายละเอียดต่างๆ ของชั้นเรียน
 
+
+.. _class-teachers-choice-section:
+
+.. figure:: _static/teachers/class_teachers_choice.png
+  :align: center
+  :scale: 80
+  
+  ส่วนการแสดงผลของตัวเลือกสำหรับผู้สอน
 
 .. _create-direct-class-student:
 
@@ -955,3 +966,50 @@
   :scale: 60
   
   แบบฟอร์มการให้คะแนนแบบฝึกหัด
+
+
+ส่วนตัวเลือกสำหรับผู้สอน(เพิ่มเติม) :ref:`view-class-detail-form`
+==================================
+
+แก้ไข
+  สำหรับเข้าสู่หน้ารายละเอียดชั้นเรียนเพื่อแก้ไขรายละเอียดต่างๆ
+
+ศูนย์รวมข้อมูลดาวน์โหลด
+  รวบรวมไฟล์สำหรับดาวน์โหลดต่างๆ ที่เกี่ยวกับชั้นเรียน เพื่อประมวลผล
+
+All Grades
+  กำลังจัดทำ
+
+ส่วนการแสดงผลของเกรดในชั้นเรียน(Grade Criteria)
+==================================================
+
+  กำลังจัดทำ
+
+การกำหนดเกณฑ์การประมวลผลคะแนนเพื่อออกเกรด
+-------------------------------------------------
+  กำลังจัดทำ
+  
+  จากหน้ารายละเอียดของชั้นเรียน สังเกตุส่วนรายละเอียดเกรด :ref:`class-grade-criteria-section`
+  
+  กดปุ่ม "New Grade Criterium" จะปรากฏแบบฟอร์มกำหนดเกณฑ์ของเกรด :ref:`create-class-new-grade-criterium-form`
+  
+  
+  
+.. _class-grade-criteria-section:
+
+.. figure:: _static/teachers/class_grade_criteria_section.png
+  :align: center
+  :scale: 60
+  
+  การแสดงผลเฉพาะส่วนรายละเอียดเกรด
+
+
+
+
+.. _create-class-new-grade-criterium-form: 
+
+.. figure:: _static/teachers/create_class_new_grade_criterium_form.png
+  :align: center
+  :scale: 60
+  
+  แบบฟอร์มการกำหนดเกณฑ์ของเกรด
