@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 #
-# Help.Class.in.th documentation build configuration file, created by
+# Help.ClassStart.org documentation build configuration file, created by
 # sphinx-quickstart on Fri Sep  2 14:03:19 2011.
 #
 # This file is execfile()d with the current directory set to its containing dir.
@@ -40,7 +40,7 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'Class.in.th'
+project = u'ClassStart.org'
 copyright = u'2011, Thawatchai Piyawat, Jantwan Piyawat, and Nantita Noiwan'
 
 # The version info for the project you're documenting, acts as replacement for
@@ -179,7 +179,7 @@ latex_font_size = '12pt'
 # Grouping the document tree into LaTeX files. List of tuples
 # (source start file, target name, title, author, documentclass [howto/manual]).
 latex_documents = [
-  ('index', 'manual.tex', u'คู่มือการใช้งาน Class.in.th',
+  ('index', 'manual.tex', u'คู่มือการใช้งาน ClassStart.org',
    u'ผศ.ดร.ธวัชชัย ปิยะวัฒน์\\\\ดร.จันทวรรณ ปิยะวัฒน์\\\\นันทิตา น้อยวัน', 'manual'),
 ]
 
@@ -231,7 +231,7 @@ latex_elements = {
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    ('index', 'helpclassinth', u'Help.Class.in.th Documentation',
+    ('index', 'helpclassinth', u'Help.ClassStart.org Documentation',
      [u'Thawatchai Piyawat, Jantwan Piyawat, Nantita Noiwan'], 1)
 ]
 
@@ -239,7 +239,7 @@ man_pages = [
 # -- Options for Epub output ---------------------------------------------------
 
 # Bibliographic Dublin Core info.
-epub_title = u'Help.Class.in.th'
+epub_title = u'Help.ClassStart.org'
 epub_author = u'Thawatchai Piyawat, Jantwan Piyawat, and Nantita Noiwan'
 epub_publisher = u'Thawatchai Piyawat, Jantwan Piyawat, and Nantita Noiwan'
 epub_copyright = u'2011, Thawatchai Piyawat, Jantwan Piyawat, and Nantita Noiwan'
