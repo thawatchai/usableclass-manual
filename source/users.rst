@@ -15,7 +15,7 @@
 
 .. figure:: _static/users/sign_up_form.jpg
   :align: center
-  :scale: 80
+  :scale: 60
   
   แบบฟอร์มการลงทะเบียน
 
@@ -189,7 +189,7 @@ Facebook Username
 
 .. figure:: _static/users/edit_member_detail_form_01.png
   :align: center
-  :scale: 80
+  :scale: 60
   
   แบบฟอร์มแก้ไขข้อมูลสมาชิก (ส่วนที่2 : การแก้ไขรายละเอียดข้อมูลส่วนตัวของสมาชิก)
 
@@ -210,7 +210,7 @@ Facebook Username
 
 .. figure:: _static/users/edit_picture_profile_form.png
   :align: center
-  :scale: 80
+  :scale: 60
   
   แบบฟอร์มการแก้ไขรูปประจำตัว
 
@@ -248,7 +248,7 @@ Facebook Username
 
 .. figure:: _static/users/create_learning_shortcut_form.png
   :align: center
-  :scale: 80
+  :scale: 60
   
   แบบฟอร์มลัดการเพิ่มบันทึกการเรียนรู้
   
@@ -275,7 +275,7 @@ Facebook Username
 
 .. figure:: _static/users/learning_journal_form.png
   :align: center
-  :scale: 80
+  :scale: 60
   
   แบบฟอร์มบันทึกการเรียนรู้
 
@@ -302,7 +302,7 @@ Facebook Username
 
 .. figure:: _static/users/add_attach_file_form.png
   :align: center
-  :scale: 80
+  :scale: 60
   
   แบบฟอร์มการเพิ่มไฟล์แนบ
 
@@ -318,6 +318,7 @@ Facebook Username
   #. กรอกรายละเอียดที่ต้องการแก้ไขหรือเพิ่มเติมของบันทึกการเรียนรู้ หากต้องการแนบไฟล์เพิ่มเติมสามารถศึกษาการใช้งานได้จากขั้นตอน :ref:`add-attach-file-form`
   #. กดปุ่ม "จัดเก็บ'' เพื่อบันทึกการเรียนรู้ที่แก้ไข เมื่อบันทีึกแล้วจะปรากฏข้อความ "บันทึกการเรียนรู้ได้ถูกทำการแก้ไขสำเร็จแล้ว'' แสดงขึ้นมา
 
+.. _view-learning-section:
 
 อ่านบันทึกการเรียนรู้*
 -------------------
