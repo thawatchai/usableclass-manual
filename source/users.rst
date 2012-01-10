@@ -171,7 +171,7 @@ Facebook Username
 
 .. figure:: _static/users/edit_password_form.png
   :align: center
-  :scale: 80
+  :scale: 60
   
   แบบฟอร์มการแก้ไขรหัสผ่านใหม่
   
